@@ -1,7 +1,7 @@
-import React from 'react'
-import { WorkText } from '../assets/Text';
+import React from "react";
+import { WorkText } from "../Text";
 
-export const ProductItem = ({src}) => {
+export const ProductItem = ({ src, item_name }) => {
   return (
     <div
       className={`relative  rounded-xl w-[100%] h-[100%] p-2 overflow-hidden`}
@@ -10,10 +10,10 @@ export const ProductItem = ({src}) => {
         className={`bg-gray-700/50 hover:bg-gray-700/30 rounded-xl w-full h-full absolute top-0 left-0 flex justify-center items-center`}
       >
         <WorkText block className={`text-center text-white text-5xl font-bold`}>
-          Item Name
+          {item_name}
         </WorkText>
       </div>
-      <img className="w-full h-full" src="/assets/cap1.jpg" alt="shirt" />
+      <img className="w-full h-full" src="/assets/cap1.jpg" alt="item" />
     </div>
   );
-}
+};

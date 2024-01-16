@@ -1,16 +1,15 @@
 import React from "react";
-import PageContainer from "./PageContainer";
+import PageContainer from "./Container";
 import { WorkText, ArvoText } from "./Text";
 
 export default function Footer() {
   return (
-    <div className={`bg-[#F8F8F8]`}>
-
-    <PageContainer className={`mt-20 pt-20 pb-8 flex flex-col items-center  mx-auto`}>
-        <TopFooter/>
+    <div className={`bg-[#F8F8F8] md:p-20 p-5 w-full`}>
+      <div className={` flex flex-col items-center w-full`}>
+        <TopFooter />
         <div className={`bg-[#DCDCDC] w-[95vw] h-[1px] my-8`}></div>
         <BottomFooter />
-    </PageContainer>
+      </div>
     </div>
   );
 }

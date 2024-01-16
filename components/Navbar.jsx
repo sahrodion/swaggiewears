@@ -20,7 +20,7 @@ export default function Navbar() {
   }, [setActive]);
 
   return (
-    <nav className="xl:px-20 px-8 py-3 grid grid-cols-3 items-center border-b-[2px] bg-white max-w-[2200px]">
+    <nav className="xl:px-20 px-8 grid grid-cols-3 items-center border-b-[2px] bg-white max-w-[2200px]">
       <Link href={`/`}>
         <img className={`w-10`} src="/assets/Logoblack.png" alt="logo" />
       </Link>

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Button from "../assets/Button";
-import { WorkText, ArvoText } from "../assets/Text";
+import Button from "../Button";
+import { WorkText, ArvoText } from "../Text";
 
 export default function HeroSection() {
   return (
@@ -16,7 +16,7 @@ export default function HeroSection() {
           className={`absolute top-[50%] flex flex-col items-center`}
         >
           <img className={`w-[500px] mb-5`} src="/assets/black.svg" alt="" />
-          <WorkText className={`font-medium text-white text-3xl mb-8`}>
+          <WorkText className={`font-medium text-white text-3xl mb-5`}>
             For Those Who Believe
           </WorkText>
           <Link href={`/Collections`}>

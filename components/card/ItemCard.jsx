@@ -1,24 +1,25 @@
 import React from "react";
-import { WorkText, ArvoText } from "../assets/Text";
-import CardContainer from "./CardContainer";
+import { WorkText, ArvoText } from "../Text";
+import Link from "next/link";
+import { urlFor } from "../lib/client";
 
-export default function ItemCard(props) {
-const{src, item_name} = props
+export default function ItemCard({ product: { image, name, slug, price } }) {
   return (
     <div>
-      <div
-        className={`border-2 border-[#F8F8F]  w-[100%] h-[100%] p-10 overflow-hidden`}
-      >
-        <img
-          className="w-full h-full hover:scale-125 transition-all duration-500"
-          src={src}
-          alt="shirt"
-        />
-      </div>
-      <ArvoText block className={`font-medium text-xl mt-3`}>
-        {item_name}
-      </ArvoText>
-      <ArvoText>N 6000</ArvoText>
+      <Link href={`/product/${slug.current}`}>
+        <div
+          className={`border border-[#F8F8F]  p-1 overflow-hidden flex justify-center items-center`}
+        >
+          <img
+            className="w-[100%] hover:scale-125 transition-all duration-500"
+            src={urlFor(image && image[0]).url()}
+          />
+        </div>
+        <ArvoText block className={`text- mt-3`}>
+          {name}
+        </ArvoText>
+        <ArvoText className={`font-bold`}>₦ {price}</ArvoText>
+      </Link>
     </div>
   );
 }

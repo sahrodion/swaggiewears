@@ -1,7 +1,7 @@
 import React from "react";
-import { WorkText, ArvoText } from "../assets/Text";
-import SearchBlock from "../assets/SearchBlock";
-import PageContainer from "../assets/PageContainer";
+import { WorkText, ArvoText } from "../Text";
+import SearchBlock from "../SearchBlock";
+import PageContainer from "../Container";
 import ItemCard from "../card/ItemCard";
 
 export const Sweats = () => {
@@ -10,17 +10,8 @@ export const Sweats = () => {
       <WorkText block className={`mb-12 mt-20 text-center text-5xl font-bold`}>
         Sweatshirts
       </WorkText>
-      <SearchBlock/>
-      <div className={`grid md:grid-cols-2 grid-cols-1 gap-40 gap-y-20`}>
-        <ItemCard src={`/assets/shirt.jpg`}/>
-        <ItemCard src={`/assets/shirt2.jpg`}/>
-        <ItemCard src={`/assets/shirt3.jpg`}/>
-        <ItemCard src={`/assets/shirt.jpg`}/>
-        <ItemCard src={`/assets/shirt.jpg`}/>
-        <ItemCard src={`/assets/shirt2.jpg`}/>
-        <ItemCard src={`/assets/shirt.jpg`}/>
-        <ItemCard src={`/assets/shirt3.jpg`}/>
-      </div>
+      <SearchBlock />
+      <div className={`grid md:grid-cols-2 grid-cols-1 gap-40 gap-y-20`}></div>
     </PageContainer>
   );
 };

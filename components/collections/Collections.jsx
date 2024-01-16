@@ -11,25 +11,11 @@ export const Collections = () => {
         Collections
       </WorkText>
       <div className={`grid md:grid-cols-3 grid-cols-2 gap-5`}>
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-      
+        <ProductItem item_name={`Pants`}/>
+        <ProductItem item_name={`Headwear`}/>
+        <ProductItem item_name={`Shirts`}/>
+        <ProductItem item_name={`Sweatshirts`}/>
+        <ProductItem item_name={`Shorts`}/>
       </div>
         </PageContainer>
       
